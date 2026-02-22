@@ -1,0 +1,5 @@
+https://silver-crane-179692.hostingersite.com/index.php   ------------ la pagina en hosting 
+la contraseña para la pagina wed ---
+ usario = admin  
+ contraseña = password
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="6dp"
+    android:background="@drawable/bg_card"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <!-- Movie Poster -->
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="110dp"
+        android:layout_height="160dp"
+        android:background="@drawable/placeholder_movie"
+        android:contentDescription="Poster"
+        android:scaleType="centerCrop" />
+
+    <!-- Info Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="14dp"
+        android:orientation="vertical">
+
+        <!-- Movie Name -->
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="2"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            tools:text="Mad Max: Fury Road" />
+
+        <!-- Genre Badge -->
+        <TextView
+            android:id="@+id/tvGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_genre_badge"
+            android:textColor="@color/accent_purple"
+            android:textSize="11sp"
+            tools:text="Acción" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="3"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            tools:text="En un mundo postapocalíptico..." />
+
+        <!-- Trailer Button -->
+        <Button
+            android:id="@+id/btnTrailer"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_button_trailer"
+            android:drawableStart="@android:drawable/ic_media_play"
+            android:drawablePadding="6dp"
+            android:drawableTint="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/btn_ver_pelicula"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
